@@ -169,21 +169,22 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Box shadow */
   margin: 20px 0; /* Margin to separate from other sections */
 }
+
 /* Ensure the container is positioned relative to hold the overlay */
 .exercise-content {
-  position: relative; /* Ensure this is set to position the overlay correctly */
+  position: relative;
 }
 
 /* Style for the overlay */
-.exercise-overlay {
+/* .exercise-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: calc(98%);
   height: 100%;
-  background: rgba(101, 98, 98, 0.258); /* Dark semi-transparent background */
-  z-index: 10; /* Ensure it is above the iframe */
-  cursor: pointer; /* Show pointer cursor on hover */
+  background: rgba(101, 98, 98, 0.258); 
+  z-index: 10; 
+  cursor: pointer; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,21 +192,21 @@
   font-size: 1.2em;
   text-align: center;
   overflow: hidden;
-}
+} */
 
 /* Overlay click effect to redirect */
-.exercise-overlay:hover {
-  background: rgba(0, 0, 0, 0.7); /* Darker background on hover */
-}
+/* .exercise-overlay:hover {
+  background: rgba(0, 0, 0, 0.7); 
+} */
 
 /* Optional: Adjust overlay text styling if needed */
-.exercise-overlay span {
+/* .exercise-overlay span {
   display: none;
 }
 .exercise-overlay:hover span {
   display: block;
-  pointer-events: none; /* Ensure text does not block click events */
-}
+  pointer-events: none;
+} */
 
 /* iFrame styling */
 .exercise-content iframe {
