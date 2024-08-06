@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Alish Gosai</title>
+  <link rel="icon" href="images/logo-no-bg.png" type="image/x-icon">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/resume.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- FontAwesome -->
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- AOS library Animate on scroll -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+</head>
+
+<body>
+
+<!-- navbar for mobile -->
+<div class="navbar-width">
+  <div class="navbar">
+    <a href="../index.html">
+      <img src="../images/logo-no-bg.png" alt="">
+      <!-- <i class="fas fa-home icon"></i> -->
+      <span>Home</span>
+    </a>
+    <a href="../html/about.html">
+      <i class="fas fa-user icon"></i>
+      <span>About</span>
+    </a>
+    <a href="../html/projects.html">
+      <i class="fas fa-briefcase icon"></i>
+      <span>Projects</span>
+    </a>
+    <a href="../html/contact.html">
+      <i class="fas fa-envelope icon"></i>
+      <span>Contact</span>
+    </a>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <i class="fas fa-bars icon" id="hamburger-icon"></i>
+      <span id="hamburger-text" style="font-size: 12px;">More</span>
+    </div>
+  </div>
+</div>
+
+<div class="hamburger-menu" id="hamburger-menu">
+  <a href="../index.html">Home</a>
+  <a href="../html/about.html">About</a>
+  <a href="../html/resume.html" class="active">Resume</a>
+  <a href="../html/projects.html">Projects</a>
+  <a href="../html/videos.html">Videos</a>
+  <a href="../html/contact.html">Contact</a>
+  <a href="../index.html">More</a>
+</div>
+<!-- overlay -->
+<div id="overlay" class="overlay"></div>
+
+
+  <!-- Navbar for my portfolio -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="../index.html">
+          <img src="../images/logo-no-bg.png" alt="Logo" class="my-nav-logo">
+        </a>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../html/about.html">About</a></li>
+          <li><a href="../html/resume.html" class="active">Resume</a></li>
+          <li><a href="../html/projects.html">Projects</a></li>
+          <li><a href="../html/videos.html">Videos</a></li>
+          <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-connect">
+        <a href="../html/contact.html">
+          Let's Connect
+        </a>
+      </div>
+      <div class="nav-toggle">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times" style="display: none;"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends here -->
+
+  <!-- <img src="../images/ag-circular-golden-gradient.png" alt="Alish Image" id="alish-gradient"> -->
+  <!-- Resume Content -->
+  <section id="contact" class="section-resume">
+    <h1 class="resume-title" data-aos="zoom-out-down" data-aos-once="true">Resume</h1>
+    <div class="resume-container">
+      <header class="resume-header" data-aos="fade-up">
+        <h1>Alish Gosai</h1>
+        <p>Web Developer | ASP.NET MVC Specialist</p>
+      </header>
+  
+      <div class="summary-skills-container">
+        <section class="resume-section summary-section" data-aos="fade-up">
+          <h2>Professional Summary</h2>
+          <p>Aspiring web developer passionate about creating dynamic and responsive web applications. Proficient in HTML5, CSS, JavaScript, and various front-end technologies. Strong problem-solving skills, a commitment to continuous learning, and a collaborative team player.</p>
+        </section>
+  
+        <section class="resume-section skills-section" data-aos="fade-up">
+          <h2>Languages and Technologies</h2>
+          <div class="skills-container">
+            <div class="skills-list">
+
+              <div class="skill">
+                <i class="fab fa-html5"></i>
+                <div class="progress">
+                  <div class="progress-bar" data-progress="90%">
+                    <span>HTML5</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <i class="fab fa-css3-alt"></i>
+                <div class="progress">
+                  <div class="progress-bar" data-progress="85%">
+                    <span>CSS3</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <i class="fab fa-js-square"></i>
+                <div class="progress">
+                  <div class="progress-bar" data-progress="70%">
+                    <span>JavaScript</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <i class="fab fa-java"></i>
+                <div class="progress">
+                  <div class="progress-bar" data-progress="60%">
+                    <span>Java</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <!-- <i class="fas fa-code"></i> -->
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>.NET</title><path fill= "goldenrod" d="M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z"/></svg>
+                
+
+                <div class="progress">
+                  <div class="progress-bar" data-progress="55%">
+                    <span>ASP.NET MVC</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="skill">
+                <!-- <i class="fas fa-code"></i> -->
+                <i class="skill-icon">C#</i>
+                <div class="progress">
+                  <div class="progress-bar" data-progress="50%">
+                    <span>C#</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <i class="fab fa-python"></i>
+                <div class="progress">
+                  <div class="progress-bar" data-progress="15%">
+                    <span>Python</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <i class="fab fa-react"></i>
+                <div class="progress">
+                  <div class="progress-bar" data-progress="10%">
+                    <span>React</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <i class="fab fa-node"></i>
+                <div class="progress">
+                  <div class="progress-bar" data-progress="10%">
+                    <span>Node.js</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        
+      </div>
+  
+      <section class="resume-section experience-section" data-aos="fade-up">
+        <h2>Experience</h2>
+        <div class="experience-container" data-aos="fade-up">
+
+          <div class="experience-box">
+            <h3>Customer Service Representative</h3>
+            <p>Coles Group</p>
+            <p><i>Sep 2022 - Present</i></p>
+            <ul>
+              <li>Resolving customer inquiries and concerns in a timely and professional manner.</li>
+              <li>Collaborating with colleagues to achieve goals and improve customer experience.</li>
+              <li>Provide excellent customer service, answering queries and handling sales.</li>
+              <li>Optimizing daily production to increase sales minimize loss.</li>
+            </ul>
+          </div>
+
+          <div class="experience-box" data-aos="fade-up">
+            <h3>Content Creator</h3>
+            <p>YouTube</p>
+            <p><i>Jul 2018 - Present</i></p>
+            <ul>
+              <li>Creating and producing action-packed videos.</li>
+              <li>Learned editing and post-production skills.</li>
+              <li>Grew a small engaged audience.</li>
+            </ul>
+          </div>
+
+          <div class="experience-box" data-aos="fade-up">
+            <h3>Family Business Assistant</h3>
+            <p>Arjun Furniture</p>
+            <p><i>Mar 2016 - Feb 2022</i></p>
+            <ul>
+              <li>Managed social media page and content.</li>
+              <li>Coordinated daily operations and administrative tasks</li>
+              <li>Learned furniture making, repairing and assembling with precise measurement.</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+  
+      <section class="resume-section education-section" data-aos="fade-up">
+        <h2>Education</h2>
+        <div class="education-container" data-aos="fade-up">
+          <div class="education-box">
+            <h3>Bachelor of Information Technology</h3>
+            <p>King's Own Institute</p>
+            <p>Sydney, Australia</p>
+            <p><i>2022 - 2025</i></p>
+          </div>
+          <div class="education-box"  data-aos="fade-up">
+            <h3>+2 Computer Science</h3>
+            <p>Bagiswori Secondary School</p>
+            <p>Bhaktapur, Nepal</p>
+            <p><i>2019 - 2021</i></p>
+          </div>
+          <!-- <div class="education-box"  data-aos="fade-up">
+            <h3>Secondary Education Examination (SEE)</h3>
+            <p>Sooryodaya Secondary School</p>
+            <p>Bhaktapur, Nepal</p>
+            <p><i>2019</i></p>
+          </div> -->
+        </div>
+      </section>
+  
+      <section class="resume-section certifications-section" data-aos="fade-up">
+        <h2>Certifications</h2>
+        <div class="certification-container"  data-aos="fade-up">
+          <div class="certification-box">
+            <h3>Introduction to Front-End Development</h3>
+            <p>Meta</p>
+            <p><i>Issued: Sep 2023</i></p>
+            <p>Gained proficiency in HTML5, CSS and basics of working with UI frameworks.</p>
+          </div>
+          <div class="certification-box"  data-aos="fade-up">
+            <h3>Programming with JavaScript</h3>
+            <p>Meta</p>
+            <p><i>Issued: July 2024</i></p>
+            <p>Acquired skills in JavaScript programming, creating simple JavaScript codes and manipulating objects and arrays.</p>
+          </div>
+          <div class="certification-box"  data-aos="fade-up">
+            <h3>Version Control</h3>
+            <p>Meta</p>
+            <p><i>Issued: July 2024</i></p>
+            <p>Learned implementing Version Control systems, using GitHub repository, navigating and configuring using command line.</p>
+          </div>
+          <div class="certification-box"  data-aos="fade-up">
+            <h3>AWS Cloud Practitioner Essentials</h3>
+            <p>Amazon Web Services</p>
+            <p><i>Issued: Jun 2024</i></p>
+            <p>Gained knowledge on on-premises, hybrid-cloud, all-in cloud and basics global infrastructure of AWS cloud.</p>
+          </div>
+        </div>
+      </section>
+  
+    </div>
+  </section>
+  
+  <!-- End Resume Content -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <div class="footer-content">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../images/logo-no-bg.png" alt="Logo">
+          </a>
+        </div>
+        <div class="social-media">
+          <a href="https://www.facebook.com/alishgosai" target="_blank" class="facebook"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/in/alishgosai/" target="_blank" class="linkedin"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/alishgosai" target="_blank" class="github"><i class="fab fa-github"></i></a>
+          <a href="https://www.youtube.com/c/ALISHGOSAI?sub_confirmation=1" target="_blank" class="youtube"><i
+              class="fab fa-youtube"></i></a>
+          <a href="https://x.com/intent/follow?screen_name=alishgosai&followConfirm=true" target="_blank"
+            class="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/alish___gosai/" target="_blank" class="instagram"><i
+              class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <p>&copy; 2024 Alish Gosai. All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- JavaScript -->
+  <script src="../js/nav.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../js/resume.js"></script>
+  <script src="../js/move-image-with-mouse-other-pages"></script>
+</body>
+
+</html>

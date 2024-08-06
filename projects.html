@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Alish Gosai</title>
+    <link rel="icon" href="images/logo-no-bg.png" type="image/x-icon">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- AOS library Animate on scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+</head>
+
+<body>
+    <!-- navbar for mobile -->
+    <div class="navbar-width">
+        <div class="navbar">
+            <a href="../index.html">
+                <img src="../images/logo-no-bg.png" alt="">
+                <!-- <i class="fas fa-home icon"></i> -->
+                <span>Home</span>
+            </a>
+            <a href="../html/about.html">
+                <i class="fas fa-user icon"></i>
+                <span>About</span>
+            </a>
+            <a href="../html/projects.html" class="active">
+                <i class="fas fa-briefcase icon"></i>
+                <span>Projects</span>
+            </a>
+            <a href="../html/contact.html">
+                <i class="fas fa-envelope icon"></i>
+                <span>Contact</span>
+            </a>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars icon" id="hamburger-icon"></i>
+                <span id="hamburger-text" style="font-size: 12px;">More</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hamburger-menu" id="hamburger-menu">
+        <a href="../index.html">Home</a>
+        <a href="../html/about.html">About</a>
+        <a href="../html/resume.html">Resume</a>
+        <a href="../html/projects.html" class="active">Projects</a>
+        <a href="../html/videos.html">Videos</a>
+        <a href="../html/contact.html">Contact</a>
+        <a href="../index.html">More</a>
+    </div>
+    <!-- overlay -->
+    <div id="overlay" class="overlay"></div>
+
+
+
+
+    <!-- Navbar for my portfolio -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img src="../images/logo-no-bg.png" alt="Logo" class="my-nav-logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../html/about.html">About</a></li>
+                    <li><a href="../html/resume.html">Resume</a></li>
+                    <li><a href="../html/projects.html" class="active">Projects</a></li>
+                    <li><a href="../html/videos.html">Videos</a></li>
+                    <li><a href="../html/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-connect">
+                <a href="../html/contact.html">
+                    Let's Connect
+                </a>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times" style="display: none;"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar ends here -->
+
+    <!-- <img src="../images/ag-circular-golden-gradient.png" alt="Alish Image" id="alish-gradient"> -->
+
+    <section id="projects" class="section-projects">
+        <h1 class="projects-title" data-aos="zoom-out-down" data-aos-once="true">My Projects</h1>
+        <div class="projects-container">
+
+
+
+            <!-- Project 1 -->
+            <div class="project" data-aos="fade-up">
+                <img src="../images/projects-images/Screenshot 2024-08-03 215450.png" alt="Project 1 Image">
+                <div class="project-details">
+                    <h2 class="project-title">Personal Website</h2>
+                    <p class="project-description">
+                        Created a responsive personal website from scratch. The website is static and hosted using
+                        GitHub pages.
+                    </p>
+                    <p>Languages Used</p>
+                    <div class="skills">
+                        <!-- Skills for Project 1 -->
+                        <div class="skill">
+                            <i class="fab fa-html5"></i> <!-- Font Awesome HTML5 Icon -->
+                            <div class="progress">
+                                <div class="progress-bar" data-progress="90"></div>
+                            </div>
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-css3-alt"></i> <!-- Font Awesome CSS3 Icon -->
+                            <div class="progress">
+                                <div class="progress-bar" data-progress="85"></div>
+                            </div>
+                            <p>CSS</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-js"></i> <!-- Font Awesome CSS3 Icon -->
+                            <div class="progress">
+                                <div class="progress-bar" data-progress="50"></div>
+                            </div>
+                            <p>JavaScript</p>
+                        </div>
+                        <!-- Add more skills as needed for Project 1 -->
+                    </div>
+                    <a href="https://github.com/alishgosai/portfolio" class="btn">View Project</a>
+                    <a href="https://drive.google.com/file/d/1pbn2LutHxR6ua-V38vV26cTvNAEJ6TmF/view?usp=sharing"
+                        class="btn">Watch
+                        Demo</a>
+                </div>
+            </div>
+
+
+            <!--  -->
+
+            <!-- Project 2 -->
+            <div class="project" data-aos="fade-up">
+                <img src="../images/projects-images/Screenshot 2024-05-28 012354.png" alt="Project 2 Image">
+                <div class="project-details">
+                    <h2 class="project-title">MVC Web Application</h2>
+                    <p class="project-description">
+                        This is a login and reservation system for a restaurant. This is a group project created by me
+                        and my
+                        friends together. This project focuses on using Model View Controler (MVC) to create pages.
+                    </p>
+                    <p>Technologies Used</p>
+                    <div class="skills">
+                        <!-- Skills for Project 2 -->
+                        <div class="skill">
+                            <i class="fab fa-html5"></i> <!-- Font Awesome HTML5 Icon -->
+                            <div class="progress">
+                                <div class="progress-bar" data-progress="80"></div>
+                            </div>
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-css3-alt"></i> <!-- Font Awesome JavaScript Icon -->
+                            <div class="progress">
+                                <div class="progress-bar" data-progress="80"></div>
+                            </div>
+                            <p>CSS</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-csharp">C#</i> <!-- Font Awesome JavaScript Icon -->
+                            <div class="progress">
+                                <div class="progress-bar" data-progress="60"></div>
+                            </div>
+                            <p>C-sharp</p>
+                        </div>
+                        <div class="skill">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title>.NET</title>
+                                <path fill="goldenrod"
+                                    d="M24 8.77h-2.468v7.565h-1.425V8.77h-2.462V7.53H24zm-6.852 7.565h-4.821V7.53h4.63v1.24h-3.205v2.494h2.953v1.234h-2.953v2.604h3.396zm-6.708 0H8.882L4.78 9.863a2.896 2.896 0 0 1-.258-.51h-.036c.032.189.048.592.048 1.21v5.772H3.157V7.53h1.659l3.965 6.32c.167.261.275.442.323.54h.024c-.04-.233-.06-.629-.06-1.185V7.529h1.372zm-8.703-.693a.868.829 0 0 1-.869.829.868.829 0 0 1-.868-.83.868.829 0 0 1 .868-.828.868.829 0 0 1 .869.829Z" />
+                            </svg>
+                            <div class="progress">
+                                <div class="progress-bar" data-progress="60"></div>
+                            </div>
+                            <p>ASP.NET MVC</p>
+                        </div>
+                        <!-- Add more skills as needed for Project 2 -->
+                    </div>
+                    <a href="https://github.com/alishgosai/Nepalese-cusine" target="_blank" class="btn">View Project</a>
+                    <a href="https://drive.google.com/file/d/1Rg3vNDDNDMy8QRQ7Fm-2sk05YDVviVTy/view?usp=sharing"
+                        class="btn">Watch
+                        Demo</a>
+
+                </div>
+            </div>
+
+
+            <!-- Project 1 -->
+            <div class="project" data-aos="fade-up">
+                <img src="../images/projects-images/Screenshot 2024-08-06 135914.png" alt="Project 1 Image">
+                <div class="project-details">
+                    <h2 class="project-title">Personal Website</h2>
+                    <p class="project-description">
+                        AnswerDeck is developed to solve programming questions of widely used programming languages.
+                    </p>
+                    <p>Languages Used</p>
+                    <div class="skills">
+                        <!-- Skills for Project 1 -->
+                        <div class="skill">
+                            <i class="fab fa-html5"></i> <!-- Font Awesome HTML5 Icon -->
+                            <div class="progress">
+                                <div class="progress-bar" data-progress="90"></div>
+                            </div>
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-css3-alt"></i> <!-- Font Awesome CSS3 Icon -->
+                            <div class="progress">
+                                <div class="progress-bar" data-progress="50"></div>
+                            </div>
+                            <p>CSS</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-js"></i> <!-- Font Awesome CSS3 Icon -->
+                            <div class="progress">
+                                <div class="progress-bar" data-progress="60"></div>
+                            </div>
+                            <p>JavaScript</p>
+                        </div>
+                        <!-- Add more skills as needed for Project 1 -->
+                    </div>
+                    <a href="https://github.com/alishgosai/AnswerDeck" class="btn">View Project</a>
+                    <a href="#" class="btn">Watch
+                        Demo</a>
+                </div>
+            </div>
+            <!-- Repeat Project 3 to Project 6 following the same structure -->
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-skills">
+        <div class="skills-container">
+            <h2>Technologies</h2>
+            <div class="skills-list">
+                <!-- Skill 1 -->
+                <div class="skill">
+                    <i class="fab fa-html5"></i> <!-- Font Awesome HTML5 Icon -->
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="90"></div>
+                    </div>
+                    <p>HTML</p>
+                </div>
+                <!-- Skill 2 -->
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i> <!-- Font Awesome CSS3 Icon -->
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="85"></div>
+                    </div>
+                    <p>CSS</p>
+                </div>
+                <!-- Skill 3 -->
+                <div class="skill">
+                    <i class="fab fa-js"></i> <!-- Font Awesome JavaScript Icon -->
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="65"></div>
+                    </div>
+                    <p>JavaScript</p>
+                </div>
+                <!-- Skill 4 -->
+                <div class="skill">
+                    <i class="fab fa-bootstrap"></i> <!-- Font Awesome Bootstrap Icon -->
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="70"></div>
+                    </div>
+                    <p>Bootstrap</p>
+                </div>
+                <!-- Skill 5 -->
+                <div class="skill">
+                    <i class="fab fa-webflow"></i> <!-- Font Awesome Webflow Icon -->
+                    <div class="progress">
+                        <div class="progress-bar" data-progress="70"></div>
+                    </div>
+                    <p>Webflow</p>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- footer startas here -->
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../images/logo-no-bg.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/alishgosai" target="_blank" class="facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/alishgosai/" target="_blank" class="linkedin"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/alishgosai" target="_blank" class="github"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/c/ALISHGOSAI?sub_confirmation=1" target="_blank" class="youtube"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="https://x.com/intent/follow?screen_name=alishgosai&followConfirm=true" target="_blank"
+                        class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/alish___gosai/" target="_blank" class="instagram"><i
+                            class="fab fa-instagram"></i></a>
+
+
+                </div>
+            </div>
+            <p>&copy; 2024 Alish Gosai. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- footer ends here -->
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/projects.js"></script>
+    <!-- AOS JavaScript - Include the AOS library JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+    </script>
+    <script src="../js/move-image-with-mouse-other-pages"></script>
+
+</body>
+
+</html>

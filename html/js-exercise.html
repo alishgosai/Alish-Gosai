@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Exercises - Alish Gosai</title>
+  <link rel="icon" href="../images/logo-no-bg.png" type="image/x-icon">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/js-exercise.css"> <!-- Updated CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- AOS library Animate on scroll -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body>
+  <!-- navbar for mobile -->
+  <div class="navbar-width">
+    <div class="navbar">
+      <a href="../index.html">
+        <img src="../images/logo-no-bg.png" alt="">
+        <span>Home</span>
+      </a>
+      <a href="../html/js-exercise.html" class="active">
+        <i class="fas fa-code icon"></i>
+        <span>JavaScript Exercises</span>
+      </a>
+      <a href="../html/projects.html">
+        <i class="fas fa-briefcase icon"></i>
+        <span>Projects</span>
+      </a>
+      <a href="../html/contact.html">
+        <i class="fas fa-envelope icon"></i>
+        <span>Contact</span>
+      </a>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars icon" id="hamburger-icon"></i>
+        <span id="hamburger-text" style="font-size: 12px;">More</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hamburger-menu" id="hamburger-menu">
+    <a href="../index.html">Home</a>
+    <a href="../html/js-exercise.html" class="active">JavaScript Exercises</a>
+    <a href="../html/projects.html">Projects</a>
+    <a href="../html/contact.html">Contact</a>
+  </div>
+  <!-- overlay -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- Navbar for my portfolio -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="../index.html">
+          <img src="../images/logo-no-bg.png" alt="Logo" class="my-nav-logo">
+        </a>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../html/js-exercise.html" class="active">JavaScript Exercises</a></li>
+          <li><a href="../html/projects.html">Projects</a></li>
+          <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-connect">
+        <a href="../html/contact.html">
+          Let's Connect
+        </a>
+      </div>
+      <div class="nav-toggle">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times" style="display: none;"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends here -->
+
+  <!-- JavaScript Exercises section starts here -->
+  <section id="js-exercise" class="section-js-exercise">
+    <h1 class="exercise-title">JavaScript Exercises</h1>
+    <div class="exercise-container">
+      <div class="exercise-content">
+        <iframe src="https://alishgosai.github.io/Javascript-Exercise-and-Solutions/" title="JavaScript Exercises"></iframe>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- footer starts here -->
+  <footer>
+    <div class="footer">
+      <div class="footer-content">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../images/logo-no-bg.png" alt="Logo">
+          </a>
+        </div>
+        <div class="social-media">
+          <a href="https://www.facebook.com/alishgosai" target="_blank" class="facebook"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/in/alishgosai/" target="_blank" class="linkedin"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/alishgosai" target="_blank" class="github"><i class="fab fa-github"></i></a>
+          <a href="https://www.youtube.com/c/ALISHGOSAI?sub_confirmation=1" target="_blank" class="youtube"><i
+              class="fab fa-youtube"></i></a>
+          <a href="https://x.com/intent/follow?screen_name=alishgosai&followConfirm=true" target="_blank"
+            class="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/alish___gosai/" target="_blank" class="instagram"><i
+              class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <p>&copy; 2024 Alish Gosai. All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+
+  <!-- JavaScript -->
+  <script src="../js/nav.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../js/move-image-with-mouse-other-pages"></script>
+</body>
+
+</html>

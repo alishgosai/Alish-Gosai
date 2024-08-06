@@ -1,0 +1,344 @@
+/* Videos Section Styles */
+.section-videos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%; /* Set to 90% of the viewport width */
+  margin: 0 auto; /* Center the section horizontally */
+  padding: 100px 0; /* Adjust padding as needed */
+  overflow-x: hidden;
+}
+
+.video-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  color: goldenrod;
+}
+
+/* Channel Section */
+.channel-container{
+  width: 100%; /* Set to 80% of the parent (videos-section) width */
+  max-width: 900px; 
+}
+
+
+.videos-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden; /* Add this to prevent overflow issues */
+}
+
+.section-channels {
+  margin: 20px 0;
+}
+
+.channel {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Increased gap between channel elements */
+  background-color: #34230e; /* Background color for each channel */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Shadow */
+}
+
+.company-logo {
+  width: 15%; /* Adjusted width for company logo */
+  height: 100%; /* Full height of channel container */
+  display: flex;
+  align-items: center;
+}
+
+.company-logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0; /* Rounded corners for company logo */
+}
+
+.channel-info {
+  align-items: center;
+  width: 60%;
+  display: flex; /* Take remaining space */
+  gap: 20px;
+  color: goldenrod; /* Text color */
+}
+
+.channel-info h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.channel-info p {
+  font-size: 0.9em;
+  margin-bottom: 8px;
+  /* Allow description to wrap */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.channel-logo img {
+  width: 80px; /* Adjusted size for channel logos */
+  height: 80px;
+  border-radius: 50%; /* Make the image circular */
+}
+
+.subscribe-button {
+  margin-left: auto; /* Align button to right */
+}
+
+.subscribe-button button {
+  padding: 8px 12px;
+  font-size: 1em;
+  color: #34230e; /* Button text color */
+  background-color: goldenrod; /* Button background color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subscribe-button button:hover {
+  background-color: #ffd700; /* Hover background color */
+  color: #34230e; /* Hover text color */
+}
+
+/* Video Section */
+.big-video {
+  flex: 2 1 100%; /* Larger width for one video, taking full width on smaller screens */
+  max-width: 100%;
+  height: auto; /* Ensures video doesn't exceed container */
+  background-color: #34230e;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.big-video iframe {
+  width: 100%;
+  height: 460px; /* Adjusted height for proper thumbnail display */
+  max-width: 100%; /* Ensures the video iframe doesn't exceed its container */
+  border: none;
+}
+
+.big-video p, .video p {
+  padding: 10px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.videos-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.video {
+  flex: 1 1 calc(50% - 10px); /* Two videos per row, each taking up half minus gap */
+  max-width: calc(50% - 10px); /* Adjusted width to maintain two videos per row */
+  background-color: #34230e;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+.video iframe {
+  width: 100%;
+  height: auto; /* Ensure videos adjust height based on width */
+  max-width: 100%;
+  aspect-ratio: 16/9; /* Maintain aspect ratio */
+  border: none;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .section-videos, .section-channels, .videos-container {
+    width: 90%; /* Keep width to 90% of viewport on medium screens */
+  }
+
+  .video {
+    flex: 1 1 100%; /* Full width for all videos on smaller screens */
+    max-width: 100%;
+  }
+
+  .videos-row {
+    flex-direction: column;
+  }
+
+  .big-video {
+    flex-basis: 100%; /* Full width for larger video on smaller screens */
+  }
+
+  .big-video iframe {
+    height: 260px; /* Adjust height for smaller screens */
+  }
+
+}
+
+@media (max-width: 768px) {
+  .section-videos {
+    width: 100%;
+  }
+  .section-channels {
+    width: 90%; /* Keep width to 90% of viewport on smaller screens */
+  }
+  .videos-container{
+    width: 90%;
+  }
+
+  .big-video {
+    flex: 1 1 100%; /* Full width for larger video on smaller screens */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto; /* Adjust to auto height */
+  }
+
+  .big-video iframe {
+    width: 100%;
+    height: auto; /* Ensures the video iframe doesn't exceed its container */
+    max-width: 100%;
+    aspect-ratio: 16/9; /* Maintain aspect ratio */
+    border: none;
+  }
+
+  .video {
+    flex: 1 1 100%; /* Full width for all videos on smaller screens */
+    max-width: 100%;
+    background-color: #34230e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+  }
+
+  .video iframe {
+    width: 100%; /* Ensures the iframe takes full width of its container */
+    height: auto; /* Ensures the video iframe doesn't exceed its container */
+    max-width: 100%;
+    aspect-ratio: 16/9; /* Maintain aspect ratio */
+    border: none;
+  }
+
+  .video p{
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+  }
+  .videos-row {
+    flex-direction: column;
+    gap: 20px; /* Ensure gap between video elements */
+  }
+  
+  .channel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company-logo {
+    display: none; /* Hide company logo */
+  }
+
+  .channel-logo {
+    width: 30%;
+    text-align: center;
+  }
+
+  .channel-info {
+    width: 80%;
+    text-align: left;
+  }
+
+  .subscribe-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+  }
+  .subscribe-button button {
+    padding: 8px 30%;
+    font-size: 1em;
+    color: #34230e; /* Button text color */
+    background-color: goldenrod; /* Button background color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-videos {
+    width: 100%;
+  }
+  .section-channels, .videos-container {
+    width: 90%; /* Keep width to 90% of viewport on smaller screens */
+  }
+
+  .video {
+    flex: 1 1 100%; /* Full width for all videos on smaller screens */
+    max-width: 100%;
+  }
+
+  .videos-row {
+    flex-direction: column;
+  }
+
+  .big-video {
+    flex: 1 1 100%; /* Full width for larger video on smaller screens */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto; /* Adjust to auto height */
+  }
+
+  .big-video iframe {
+    width: 100%;
+    height: auto; /* Ensures the video iframe doesn't exceed its container */
+    max-width: 100%;
+    aspect-ratio: 16/9; /* Maintain aspect ratio */
+    border: none;
+  }
+
+  .channel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .company-logo {
+    display: none; /* Hide company logo */
+  }
+
+  .channel-logo {
+    width: 35%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .channel-info {
+    width: 100%;
+    text-align: left;
+  }
+
+  .subscribe-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px; /* Add space between elements */
+  }
+
+  .subscribe-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+  }
+  .subscribe-button button {
+    padding: 8px 30%;
+    font-size: 1em;
+    color: #34230e; /* Button text color */
+    background-color: goldenrod; /* Button background color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

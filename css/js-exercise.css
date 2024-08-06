@@ -1,0 +1,72 @@
+/* JavaScript Exercises section */
+#js-exercise {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  background-color: #34230e; /* Dark background color matching your theme */
+}
+
+/* Section JavaScript Exercises Styles */
+.section-js-exercise {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%; /* Full width */
+  margin: 0 auto; /* Center the section horizontally */
+  padding: 100px 0; /* Adjust padding as needed */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Title styles */
+.exercise-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  color: goldenrod; /* Match title color */
+}
+
+/* Container styles */
+.exercise-container {
+  /* display: flex;
+  flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width within section */
+  max-width: 900px; /* Maximum width */
+  background: #34230e; /* Dark background color for the container */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Box shadow */
+  margin: 20px 0; /* Margin to separate from other sections */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  min-height: 800px; /* Minimum height for a small box size */
+  max-height: 800px; /* Maximum height to avoid excessive size */
+}
+
+/* iFrame styling */
+.exercise-content iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .exercise-container {
+    padding: 20px;
+  }
+
+  .exercise-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .exercise-content iframe{
+    margin-bottom: 10px;
+  }
+  
+}

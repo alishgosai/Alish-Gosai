@@ -1,0 +1,80 @@
+/* About section */
+#about {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.section-about {
+  display: flex;
+  flex-direction: column;
+  color: goldenrod;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto; /* Center the section horizontally */
+  padding: 100px 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.about-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.about-container {
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px; /* Adjust the gap between boxes */
+  width: 80%; /* Set to 80% of viewport width */
+  max-width: 900px; /* Maximum width of 900px */
+}
+
+.about-box {
+  flex: 1 1 400px; /* Flexbox properties for responsiveness */
+  background-color: #34230e; /* Adjusted darker brown color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.about-box h2,
+.about-box h3 {
+  color: goldenrod;
+}
+
+.about-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-box ul li {
+  margin-bottom: 10px;
+}
+
+.about-box ul li a {
+  color: #daa520; /* Goldenrod */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.about-box ul li a:hover {
+  color: #ffd700; /* Lighter golden color for hover effect */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about-container {
+    width: 90%; /* Set to 90% of the viewport width for tablets and mobile */
+  }
+
+  .about-box {
+    flex: 1 1 100%; /* Full width for each box */
+  }
+}

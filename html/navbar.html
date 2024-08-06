@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alish Gosai</title>
+  <link rel="icon" href="../images/logo-no-bg.png" type="image/x-icon">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Styles -->
+   <link rel="stylesheet" href="/css/navbar.css">
+</head>
+<body>
+  <!-- Navbar for my portfolio -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#home">
+          <img src="../images/logo-no-bg.png" alt="Logo" class="my-nav-logo">
+        </a>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="html/about.html">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="html/projects.html">Projects</a></li>
+          <li><a href="videos.html"></a>Videos</li>
+          <li><a href="html/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-connect">
+        <a href="html/contact.html" target="_blank">
+          Let's Connect
+        </a>
+      </div>
+      <div class="nav-toggle">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times" style="display: none;"></i>
+      </div>
+    </div>
+  </nav>
+
+
+  <script>
+ document.addEventListener('DOMContentLoaded', () => {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+    navToggle.classList.toggle('active');
+
+    // Toggle between hamburger and cross icons
+    const isActive = navToggle.classList.contains('active');
+    if (isActive) {
+      navToggle.querySelector('.fa-bars').style.display = 'none';
+      navToggle.querySelector('.fa-times').style.display = 'block';
+    } else {
+      navToggle.querySelector('.fa-bars').style.display = 'block';
+      navToggle.querySelector('.fa-times').style.display = 'none';
+    }
+  });
+
+  // Close nav-links when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!navLinks.contains(e.target) && !navToggle.contains(e.target)) {
+      navLinks.classList.remove('show');
+      navToggle.classList.remove('active');
+      navToggle.querySelector('.fa-bars').style.display = 'block';
+      navToggle.querySelector('.fa-times').style.display = 'none';
+    }
+  });
+
+  // Close nav-links on window resize
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      navLinks.classList.remove('show');
+      navToggle.classList.remove('active');
+      navToggle.querySelector('.fa-bars').style.display = 'block';
+      navToggle.querySelector('.fa-times').style.display = 'none';
+    }
+  });
+
+  // Change nav background on scroll
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('.nav');
+    if (window.scrollY > 0) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+});
+
+
+    
+</script>
+</body>
+</html>

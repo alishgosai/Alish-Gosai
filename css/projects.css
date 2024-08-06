@@ -1,0 +1,182 @@
+/* Sections styling */
+.section-projects {
+  padding-top: 100px;
+}
+.section-projects,
+.section-skills {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Ensure the section takes at least the height of the viewport */
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  margin: 0 auto;
+}
+
+.projects-container,
+.skills-container {
+  width: 80%; /* Default width */
+  max-width: 900px; /* Limit maximum width */
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative; /* Ensure the section takes at least the height of the viewport */
+  align-items: center;
+  padding-bottom: 20px;
+  margin: 0 auto; /* Center the sections horizontally */
+}
+
+.projects-title {
+  font-size: 2.5em;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Project styling */
+.project {
+  display: flex;
+  margin: 50px auto;
+  background-color: #34230e; /* Background color */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.project img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.project-details {
+  padding: 20px;
+  flex: 1;
+}
+
+.project-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: goldenrod; /* Goldenrod color for titles */
+}
+
+.project-description {
+  margin-bottom: 20px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  flex: 0 0 calc(50% - 10px);
+  background-color: rgba(255, 255, 255, 0.1); 
+  /* Transparent white background */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Initially translate down */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.skill.active {
+  opacity: 1; /* Fade in when active */
+  transform: translateY(0); /* Move up when active */
+}
+
+.skill:hover {
+  transform: translateY(-5px); /* Hover effect */
+}
+
+.skill i {
+  font-size: 24px; /* Adjust icon size */
+  color: goldenrod; /* Goldenrod color for icons */
+}
+.skill i {
+  width: 30px;
+  font-size: 24px;
+  height: 24px;
+  color: goldenrod;
+  margin-right: 10px;
+}
+.skill img, .skill svg{
+  width: 30px;
+  font-size: 24px;
+  height: 24px;
+  padding: 0;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2); 
+  /* Transparent white for progress bar background */
+  margin: 10px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: goldenrod; /* Goldenrod color for progress bars */
+  border-radius: 8px;
+  width: var(--progress, 0); 
+  /* Initial width set to 0, will be updated via JS */
+  transition: width 0.5s;
+}
+
+
+.projects-container a {
+  color: goldenrod;
+  text-decoration: underline; /* Remove underline */
+  transition: color 0.2s ease; /* Smooth transition for color change */
+}
+
+.projects-container a:hover {
+  color: #ffd700; /* Lighter shade of goldenrod on hover */
+  font-weight: bold; /* Increase font weight on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Skills section styling */
+.skills-container {
+  text-align: center;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skills h2 {
+  color: goldenrod; /* Goldenrod color for skills section heading */
+  margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .projects-container,
+  .skills-container {
+    width: 90%; /* Set to 90% of the viewport width for tablets and mobile */
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .project img {
+    width: 100%;
+    height: auto;
+  }
+
+  .skill {
+    flex: 0 0 100%;
+  }
+}

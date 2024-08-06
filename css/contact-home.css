@@ -1,0 +1,264 @@
+/* Section Contact Styles */
+.section-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%; /* Default width */
+  margin: 0 auto; /* Center the section horizontally */
+  padding: 100px 0; /* Adjust padding as needed */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.contact-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  width: 90%; /* Set to 100% to occupy the full width within .section-contact */
+  max-width: 900px; /* Maximum width */
+  background: #34230e; /* Background color */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Box shadow for container */
+  margin: 20px 0; /* Center the container horizontally and add margin */
+}
+
+.contact-info,
+.contact-form {
+  flex: 1 1 45%;
+  min-width: 300px; /* Minimum width for better layout */
+}
+
+.contact-info h2,
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.contact-info a {
+  color: goldenrod;
+  text-decoration: underline;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info iframe {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+input,
+textarea {
+  background-color: #34230e; /* Background color */
+  color: goldenrod;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+}
+
+/* Autofill styling */
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #34230e inset !important; /* Background color */
+  -webkit-text-fill-color: goldenrod !important; /* Text color */
+}
+
+.contact-form button {
+  padding: 10px 15px;
+  font-size: 1.2em;
+  color: #34230e;
+  background-color: goldenrod;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  transition: color 0.5s;
+  color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .section-contact {
+    width: 100%; /* Set to 90% of the viewport width for tablets and mobile */
+  }
+
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .contact-info,
+  .contact-form {
+    flex: 1 1 100%;
+    min-width: auto;
+    text-align: center;
+  }
+
+  .contact-info p {
+    font-size: 0.9em;
+    margin: 5px 0;
+  }
+
+  .contact-info iframe {
+    height: 200px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 8px;
+    font-size: 0.9em;
+  }
+
+  .contact-form button {
+    padding: 8px 12px;
+    font-size: 1em;
+  }
+}
+
+/* Connect Section Styles */
+.section-connect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 90%; /* Default width */
+  max-width: 900px; /* Maximum width */
+  margin: 0 auto; /* Center the section horizontally */
+  padding: 50px 0; /* Adjust padding as needed */
+}
+
+.connect-title {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.connect-container {
+  background-color: #34230e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  margin-bottom: 60px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.connect-message {
+  padding-top: 20px;
+  font-size: 1.2em;
+  margin: 10px 10%;
+  text-align: center;
+}
+
+.social-links-contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%; /* Set to 100% to occupy the full width within .section-connect */
+  padding: 30px; /* Center the container horizontally and add margin */
+}
+
+.social-icon {
+  font-size: 3em; /* Larger icon size */
+  color: goldenrod;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Remove underline */
+}
+
+.social-icon:hover {
+  color: #ffd700;
+  animation: icon-hover 0.6s ease-in-out;
+}
+
+@keyframes icon-hover {
+  0% { transform: rotate(0); }
+  25% { transform: rotate(15deg); }
+  50% { transform: rotate(-15deg); }
+  75% { transform: rotate(15deg); }
+  100% { transform: rotate(0); }
+}
+
+.social-icon:hover i {
+  animation: bounce 0.6s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .social-links-contact {
+    gap: 20px;
+  }
+  .connect-title {
+    font-size: 2em;
+  }
+
+  .connect-message {
+    font-size: 1em;
+  }
+
+  .social-icon {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 450px) {
+  .social-links-contact {
+    padding-left: 5px;
+    padding-right: 5px;
+    gap: 16px;
+  }
+
+  .social-icon {
+    font-size: 2em;
+  }
+}

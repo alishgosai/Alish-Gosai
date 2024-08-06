@@ -1,0 +1,123 @@
+/* About section */
+#about {
+  position: relative;
+  display: flex;
+  background-color: #34230e;
+  width: 100%; /* Set the main container to 100% width */
+}
+
+.section-about {
+  display: flex;
+  flex-direction: column;
+  color: goldenrod;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Center the section horizontally */
+  padding: 50px 0;
+  background: url('../images/ag-vector-curves.png') no-repeat center center fixed;
+  background-size: cover;
+  /* box-shadow: 0 0 15px rgb(45, 22, 4); */
+  z-index: 4;
+  width: 90%; /* Set the inner container to 90% width */
+}
+
+.about-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.about-container {
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px; /* Adjust the gap between boxes */
+  width: 100%; /* Set to 100% of the inner container's width */
+  max-width: 900px; /* Maximum width of 900px */
+}
+
+.about-box {
+  flex: 1 1 400px; /* Flexbox properties for responsiveness */
+  background-color: #34230e; /* Adjusted darker brown color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.about-box h2,
+.about-box h3 {
+  color: goldenrod;
+}
+
+.about-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-box ul li {
+  margin-bottom: 10px;
+}
+
+.about-box ul li a {
+  color: #daa520; /* Goldenrod */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.about-box ul li a:hover {
+  color: #ffd700; /* Lighter golden color for hover effect */
+}
+
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .section-about {
+    width: 90%; /* Keep width to 90% of viewport on medium screens */
+  }
+
+  .about-container {
+    width: 90%; /* Keep width to 90% of viewport on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .section-about {
+    width: 90%; /* Keep width to 90% of viewport on smaller screens */
+    padding: 30px 0; /* Adjust padding for smaller screens */
+  }
+
+  .about-container {
+    width: 90%; /* Keep width to 90% of viewport on smaller screens */
+  }
+
+  .about-title {
+    font-size: 2em; /* Adjust title font size for smaller screens */
+  }
+
+  .about-box {
+    flex: 1 1 100%; /* Full width for each box on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .section-about {
+    width: 90%; /* Keep width to 90% of viewport on very small screens */
+    padding: 20px 0; /* Adjust padding for very small screens */
+  }
+
+  .about-container {
+    width: 90%; /* Keep width to 90% of viewport on very small screens */
+  }
+
+  .about-title {
+    font-size: 1.8em; /* Further adjust title font size for very small screens */
+  }
+
+  .about-box {
+    flex: 1 1 100%; /* Full width for each box on very small screens */
+  }
+}
