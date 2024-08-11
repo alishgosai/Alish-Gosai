@@ -6,6 +6,8 @@
     { "source": "/about", "destination": "/about.html" },
     { "source": "/projects", "destination": "/projects.html" },
     { "source": "/videos", "destination": "/videos.html" },
-    { "source": "/contact", "destination": "/contact.html" }
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/branding", "destination": "/branding" },
+    { "source": "/logo", "destination": "/logo-no-bg.png" }
   ]
 }
